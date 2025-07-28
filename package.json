@@ -1,0 +1,16 @@
+{
+  "name": "hexzo-login-invisible",
+  "version": "1.0.0",
+  "description": "Login Form Handler on Netlify with Invisible reCAPTCHA",
+  "scripts": {
+    "start": "netlify dev",
+    "build": "echo 'no build needed'"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "netlify-cli": "^13.2.1"
+  },
+  "type": "module"
+}
