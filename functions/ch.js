@@ -1,7 +1,16 @@
 const fetch = require("node-fetch");
 
 exports.handler = async function(event, context) {
-  const body = JSON.parse(event.body);
+  
+  let body;
+  try {
+    body = JSON.parse(event.body || "{}");
+  } catch (e) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({ success: false, error: "Invalid JSON" }),
+    };
+  }
   const secretKey = "6Le39pErAAAAAFsPcDwypom8n0RUcXNEd7AtYjbL";
   const token = body["g-recaptcha-response"];
 
