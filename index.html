@@ -93,11 +93,9 @@
       if (result.success) {
         window.location.href = "mampus.html";
       } else {
-        alert("Verifikasi gagal! Coba lagi.");
         grecaptcha.reset();
       }
     } catch (err) {
-      alert("Terjadi kesalahan saat memverifikasi.");
       grecaptcha.reset();
     } finally {
       document.getElementById("spinner-bg").classList.add("hidden");
