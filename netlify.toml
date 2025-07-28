@@ -4,6 +4,6 @@
 
 [[redirects]]
   from = "/ch"
-  to = "/.netlify/functions/ch"
+  to = "/netlify/functions/ch"
   status = 200
   force = true
