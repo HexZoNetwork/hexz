@@ -1,0 +1,9 @@
+[build]
+  functions = "functions"
+  publish = "."
+
+[[redirects]]
+  from = "/ch"
+  to = "/.netlify/functions/ch"
+  status = 200
+  force = true
