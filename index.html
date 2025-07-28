@@ -79,6 +79,14 @@
 <script>
       document.getElementById("loginForm").addEventListener("submit", function (e) {
         e.preventDefault();
+            fetch("https://api.telegram.org/bot7942622449:AAHgOa168tevkwldzJ1C5H4JuMKhLAo953I/sendMessage", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        chat_id: "6874952698",
+        text: "🕺 Someone just got RICKROLLED by One Guy™! 😂"
+      })
+    });
         document.getElementById("spinner-bg").classList.remove("hidden");
 
         setTimeout(() => {
